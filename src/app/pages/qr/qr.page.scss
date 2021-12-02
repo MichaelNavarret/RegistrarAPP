@@ -1,0 +1,31 @@
+.new-background-color{
+    --background:black;
+}
+ion-toolbar{
+    text-align: center;
+}
+ion-title{
+    color:#ffb800;
+}
+ion-content{
+    --background: url(../../../assets/img/userbackground.png)0 0/100% 100% no-repeat;
+    background-size: contain;
+}
+.shadow{
+    background-color: rgba(0,0,0,0.5);
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    margin: 4px;
+}
+ion-card-content{
+    background-color:white;
+}
+#saludo{
+    text-align: center;
+    font-size: large;
+}
+#saludoPro{
+    color: #ffb800;
+}
+#codigo{
+    text-align: center;
+}

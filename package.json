@@ -1,5 +1,5 @@
 {
-  "name": "app",
+  "name": "RegistrarAPP_V.2",
   "version": "0.0.1",
   "author": "Ionic Framework",
   "homepage": "https://ionicframework.com/",
@@ -19,7 +19,19 @@
     "@angular/platform-browser": "~12.1.1",
     "@angular/platform-browser-dynamic": "~12.1.1",
     "@angular/router": "~12.1.1",
+    "@capacitor/android": "^3.3.2",
+    "@capacitor/core": "3.3.2",
+    "@ionic-native/core": "^5.1.0",
+    "@ionic-native/email-composer": "^5.36.0",
+    "@ionic-native/qr-scanner": "^5.36.0",
     "@ionic/angular": "^5.5.2",
+    "@ionic/storage": "^3.0.6",
+    "@ionic/storage-angular": "^3.0.6",
+    "cordova-plugin-qrscanner": "^3.0.1",
+    "natives": "^1.1.6",
+    "ngx-qrcode2": "^9.0.0",
+    "node-sass": "^6.0.1",
+    "npm": "^8.1.4",
     "rxjs": "~6.6.0",
     "tslib": "^2.2.0",
     "zone.js": "~0.11.4"
@@ -34,7 +46,10 @@
     "@angular/compiler": "~12.1.1",
     "@angular/compiler-cli": "~12.1.1",
     "@angular/language-service": "~12.0.1",
+    "@capacitor/cli": "3.3.2",
     "@ionic/angular-toolkit": "^4.0.0",
+    "@ionic/app-scripts": "^3.2.4",
+    "@ionic/lab": "3.2.10",
     "@types/jasmine": "~3.6.0",
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "^12.11.1",
@@ -56,5 +71,8 @@
     "ts-node": "~8.3.0",
     "typescript": "~4.2.4"
   },
-  "description": "An Ionic project"
+  "description": "An Ionic project",
+  "cordova": {
+    "plugins": {}
+  }
 }

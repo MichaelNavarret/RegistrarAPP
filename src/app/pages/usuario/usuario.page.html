@@ -1,0 +1,90 @@
+<ion-header>
+  <ion-toolbar class ="new-background-color">
+    <ion-row>
+      <ion-col id ="titleHead" size = "8" >  
+          Portal Usuario
+      </ion-col>
+      <ion-col size = "4" id ="iconExit">
+          <ion-icon  name="exit-outline" (click) = "exit()"></ion-icon>
+      </ion-col>
+    </ion-row>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content id = "contenedor">
+  <ion-header > 
+    <ion-row id ="header"> 
+      <ion-col size="12" >
+        <h2 id ="mesage">¡Bienvenid@ {{data}}!</h2>
+      </ion-col>
+    </ion-row>
+  </ion-header>
+
+  <ion-segment >
+    <ion-row id ="monedas">
+      <ion-col size = "12">
+        <ion-item class ="title" >  
+          <h4>Feriados</h4>
+        </ion-item>
+     </ion-col>
+     <ion-col size = 12>
+       <ion-select placeholder="Seleccione mes" [(ngModel)] = "mes" (ionChange)="getItem()">
+         <ion-select-option *ngFor = "let mes of meses" [value] = "mes.key">{{mes.val}}</ion-select-option>
+       </ion-select>
+     </ion-col>
+     <ion-col>  
+       <ion-list *ngFor = "let fer of feriados" class="interior">
+         <ion-label>{{fer.nombre}}</ion-label><br>
+         <ion-label> <strong>Fecha: </strong>  {{fer.fecha}}</ion-label>
+       </ion-list>
+     </ion-col>
+    </ion-row>
+  </ion-segment>
+
+  <ion-segment>
+    <ion-row id ="sedes">
+      <ion-col  size = "12">
+        <ion-item class ="title" >  
+          <h4>Consulta el estado de tu sede</h4>
+        </ion-item>
+      </ion-col >
+      <ion-col size = 12 id = "regiones">
+          <ion-select placeholder="Seleccione region" [(ngModel)] = "regCod" (ionChange)="getSede()">
+            <ion-select-option *ngFor = "let reg of regiones" [value] = "reg.codigo" >{{reg.nombre}}</ion-select-option>
+          </ion-select>
+          <ion-col *ngFor = "let sed of sedeDuoc">
+            <ion-list class="interior">
+              <ion-label> <strong>Sede: </strong> {{sed.sede}}</ion-label><br>
+              <ion-label><strong>Estado: </strong>{{sed.estado}}</ion-label>
+            </ion-list>
+          </ion-col>
+      </ion-col>
+    </ion-row>
+  </ion-segment>
+
+  <ion-segment>
+    <ion-row id ="sedes">
+      <ion-col  size = "12">
+        <ion-button expand="full" shape="round" color="warning" (click)="accion1()" >Asistencia</ion-button>
+      </ion-col >
+      <ion-col *ngFor = "let asist of asistencias" size = "12" >
+            <ion-list class="interior" *ngIf="ocultar1">
+              <ion-label> <strong>Fecha: </strong> {{asist.strFecha}}</ion-label><br>
+              <ion-label><strong>Asignatura: </strong>{{asist.strAsignatura}}</ion-label><br>
+              <ion-label> <strong>Seccion: </strong> {{asist.strSeccion}}</ion-label><br>
+              <ion-label><strong>ID Asignatura: </strong>{{asist.strIdAsignatura}}</ion-label><br>
+              <ion-label><strong>Docente: </strong>{{asist.strDocente}}</ion-label><br>
+              <ion-label><strong>Correo: </strong> {{asist.strCorreo}}</ion-label><br>
+            </ion-list>
+      </ion-col>
+    </ion-row>
+  </ion-segment>
+ 
+</ion-content>
+
+<ion-footer>
+  <ion-button expand="full" fill="outline" color = "warning"><a class="submit" (click)="obtenerEmail()" >Enviar último registro</a></ion-button>
+  <ion-button expand="full" fill="outline" color = "warning" (click)="scanqr()">
+    <ion-icon name="qr-code-outline"></ion-icon>
+  </ion-button>
+</ion-footer>

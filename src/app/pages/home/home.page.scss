@@ -1,0 +1,66 @@
+.new-background-color{
+    --background:black;
+}
+#burgerMenu{
+    font-size: xx-large;
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+#title{
+    margin-left: 60px;
+    padding-bottom: 20px;
+}
+#logo{
+    width: 150px;
+    margin-left: 35px;
+    
+}
+.label-menu{
+    margin-left: 10px;
+    cursor:pointer;
+}
+.label-menu:hover{
+    color:#ffb800;
+}
+#tolbarMenu{
+    --background: black ;
+    color: #ffb800;
+}
+#exitMenu{
+    font-size: xx-large;
+    margin-left: 80%;
+}
+#exitMenu:hover{
+    color:#ffb800;
+    cursor:pointer;
+}
+#mainMenu{
+    --max-height: 95%;
+    opacity: 0.9;
+}
+.finalIcon{
+    margin-left: 18px;
+    font-size: x-large;
+}
+.finalIcon:hover{
+    color:#ffb800;
+}
+#idCopy{
+    font-size: xx-small;
+}
+.contentHome{
+    --background: url(../../../assets/img/userbackground.png)0 0/100% 100% no-repeat;
+    background-size: contain;
+}
+
+
+#label{
+    font-size: smaller;
+}
+ion-segment-button{
+    --background:black;
+    color:#ffb800;
+    --color-checked: #ffb800;
+}

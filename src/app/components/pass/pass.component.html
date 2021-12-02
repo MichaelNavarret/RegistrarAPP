@@ -1,0 +1,23 @@
+
+ <ion-content>
+  <br><br>
+ <ion-card id ="cardLog">
+  <ion-card-content id ="cardCont">
+      
+      <h1 id ="iconLog">Portal de recuperación </h1>
+      <h3> <em>"Recuerde que su usuario corresponde a su rut"</em></h3>
+      <!--Usuario-->
+      <ion-item >
+        <ion-label position="floating"> Usuario</ion-label>
+        <ion-input type="text" [(ngModel)] = "user"></ion-input>
+      </ion-item>
+      <ion-item >
+        <ion-label position="floating"> Contraseña Nueva</ion-label>
+        <ion-input type="password" [(ngModel)] = "pass" minlength="4" maxlength="4" required autofocus placeholder="Máximo 4 carácteres"></ion-input>
+      </ion-item>
+    
+      <ion-button expand="full" shape="round" color="warning" (click)="recuperar()" >Recuperar</ion-button>
+    
+  </ion-card-content>
+ </ion-card>
+</ion-content>

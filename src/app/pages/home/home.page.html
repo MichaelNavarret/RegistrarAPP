@@ -1,0 +1,80 @@
+<ion-header >
+  <ion-toolbar class ="new-background-color" >
+    <div (click) = "openFirst()">
+      <ion-icon id ="burgerMenu" slot='icon-only' name ="menu" ></ion-icon>
+      <img id = "logo" src="../../../assets/img/escala-grises.png" alt="">
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<!-----------------------------------------------------Pantalla Principal------------------------------------------>
+<ion-content class = "contentHome">
+  
+
+
+
+  <!-------------------------------------------------------Menú------------------------------------------>
+  <ion-menu id ="mainMenu" side="start" menuId="first" contentId="main">
+    <ion-header>
+      
+      <ion-toolbar id = "tolbarMenu">
+        <ion-row>
+          <ion-col size = "8"></ion-col>
+          <ion-col size = "3">
+            <ion-icon id = "exitMenu" (click) = "cerrarMenu()" name="close-circle-outline"></ion-icon>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col size = "12">
+            <ion-title>Menú</ion-title>
+          </ion-col>
+        </ion-row>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-list>
+        <ion-item>
+          <ion-icon name="person-circle-outline"></ion-icon>
+          <ion-label class ="label-menu" (click) = "login()">Ingresar</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="key-outline"></ion-icon>
+          <ion-label class ="label-menu" (click) = recuperar()>Recuperar Contraseña</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="help-circle-outline"></ion-icon>
+          <ion-label class ="label-menu" (click)="soporte()">FAQ</ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-content>
+    <ion-footer>
+      
+      <a href="https://www.google.com"><ion-icon class ="finalIcon" name="logo-chrome"></ion-icon></a>
+      <a href="https://www.facebook.com"><ion-icon class ="finalIcon" name="logo-facebook"></ion-icon></a>
+      <a href="https://campusvirtual.duoc.cl/"><ion-icon class ="finalIcon" name="pencil-outline"></ion-icon></a>
+      <ion-title id ="idCopy">RegistrarAPP © 2021. Michael Navarrete</ion-title>
+    </ion-footer>
+  </ion-menu>
+  <ion-router-outlet id="main"></ion-router-outlet>
+</ion-content>
+
+
+ <!-------------------------------------------------------Pie de pagina------------------------------------------>
+<ion-footer>
+  <ion-toolbar>
+    <ion-segment (ionChange)="segmentChanged($event)">
+      <ion-segment-button value="home">
+        <ion-icon name="home-outline"></ion-icon>
+        <ion-label id="label">Inicio</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="login">
+        <ion-icon name="log-in-outline"></ion-icon>
+        <ion-label id="label"> Ingresar</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="pass">
+        <ion-icon name="key-outline"></ion-icon>
+        <ion-label id="label">Contraseña</ion-label>
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+</ion-footer>

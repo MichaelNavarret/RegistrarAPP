@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Preguntas Frecuentes <ion-icon id ="cross" (click) ="closeModal()" name="close-outline"></ion-icon> </ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content > 
+  <ion-card-content>
+    <ion-item>
+      <div>
+        <h2><b>1.</b> ¿Cómo funciona RegistrarAPP?</h2>
+        <p><b>R: </b> RegistrarAPP permite escanear un código QR para poder marcar tu asistencia, de manera de agilizar el proceso de pasar lista y volverlo más confiable.</p>
+      </div>
+    </ion-item>
+    <br>
+    <ion-item>
+      <div>
+        <h2><b>2.</b>¿Cual es mi cuenta de usuario?</h2>
+        <p> <b>R:</b> Tu cuenta de usuario corresponde a tu Rut</p>
+      </div>
+    </ion-item>
+    <br>
+    <ion-item>
+      <div>
+        <h2><b>3.</b>¿Cuál es mi clave?</h2>
+        <p><b>R: </b>La primera vez que ingresas, tu clave corresponde a los últimos 4 dígitos de tu rut. Puedes cambiarla las veces que desees en el apartado 
+          <u id ="pass" (click)="menuPass()">contraseña </u> que se encuentra en el menú de inicio
+        </p>
+      </div>
+    </ion-item>
+  </ion-card-content>
+</ion-content>

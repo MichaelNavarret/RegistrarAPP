@@ -1,0 +1,24 @@
+ion-content{
+    --ion-background-color: transparent;
+}
+
+.cards{
+    background-color: white;
+    color: black;
+    text-align: center;
+    opacity: 0.9;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    cursor:pointer;
+}
+
+.cards:hover{
+    opacity: 0.8;
+    background-color: grey;
+    color:white;
+}
+.iconSize{
+    font-size: xx-large;
+}
+#iconQR{
+    color:white;
+}

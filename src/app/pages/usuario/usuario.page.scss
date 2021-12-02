@@ -1,0 +1,78 @@
+#contenedor{
+    --ion-background-color: transparent !important;
+    --background: url(../../../assets/img/userbackground.png)0 0/100% 100% no-repeat;
+}
+.new-background-color{
+    --background:black;
+}
+#titleHead{
+    color:#ffb800;
+    text-align: right;
+    font-size: large;
+    background-color: black;
+}
+#iconExit{
+    margin-top: 3px;
+    text-align: center;
+    font-size: x-large;
+    
+    color:#F55136;
+}
+#monedas{
+    text-align: center;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    margin: 10px;
+    border: 1px solid white;
+}
+
+#sedes{
+    text-align: center;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    margin: 10px;
+    border: 1px solid white;
+}
+#iconDolar{
+    font-size: x-large;
+}
+
+.title{
+    color:#ffb800;
+    font-size: x-large;
+    text-align: center;
+    text-align: center;
+}
+
+.centrado{
+    text-align: center;
+}
+
+#header{
+    margin: 2px;
+    color:white;
+    background-color: rgba(0,0,0,0.8);
+    text-align: center;
+}
+
+#mesage{
+    font-size: medium;
+}
+
+#lista{
+    border-top: 2px solid #ffb800;
+    color: white;
+}
+ion-footer{
+    background-color: black;
+}
+
+#regiones{
+    text-align: center;
+    color: white;
+}
+
+.interior{
+    color:white;
+    background-color: rgba(0,0,0,0.5);
+}
